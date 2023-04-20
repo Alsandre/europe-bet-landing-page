@@ -40,6 +40,9 @@ export default {
         18: '18px',
         19: '19px',
         20: '20px'
+      },
+      width: {
+        mobile: '91.5%'
       }
     }
   },

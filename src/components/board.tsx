@@ -1,11 +1,10 @@
-export const LeaderBoard: React.FC = () => {
+import { TBoardProps } from "../types";
+
+export const LeaderBoard: React.FC<TBoardProps> = ({children, title, className}) => {
   return (
-    <div className="rounded-2xl">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+    <div className={`${className} rounded-2xl bg-primary-dark-200 w-mobile m-auto`}>
+      <h3 className="rounded-2xl bg-primary-dark-100 py-6 text-center text-white">{title}</h3>
+      {children}
     </div>
   );
 };
