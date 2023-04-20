@@ -1,5 +1,14 @@
+import { Footer, Header, Main } from "./layout";
+
+
 function App() {
-  return <></>;
+  return (
+    <>
+    <Header />
+    <Main />
+    <Footer />
+    </>
+  );
 }
 
 export default App;

@@ -3,7 +3,7 @@ export default {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
     fontFamily: {
-      montserat: ['Montserrat', 'sans-serif'],
+      montserat: ['Montserrat', 'sans-serif']
     },
     extend: {
       colors: {
@@ -39,7 +39,7 @@ export default {
         17: '17px',
         18: '18px',
         19: '19px',
-        20: '20px',
+        20: '20px'
       }
     }
   },
