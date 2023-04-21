@@ -7,7 +7,7 @@ export const LeaderBoard: React.FC<TBoardProps> = ({
 }) => {
   return (
     <div
-      className={`${className} rounded-2xl bg-primary-dark-200 w-mobile m-auto overflow-hidden text-white`}
+      className={`${className} rounded-2xl bg-primary-dark-200 w-mobile mx-auto overflow-hidden text-white`}
     >
       <h3 className="rounded-2xl bg-primary-dark-100 py-6 text-center">
         {title}

@@ -3,7 +3,8 @@ export default {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
     fontFamily: {
-      montserat: ['Montserrat', 'sans-serif']
+      montserat: ['Montserrat', 'sans-serif'],
+      mtavruli: ['BPG Phone Sans', 'sans-serif']
     },
     extend: {
       colors: {
@@ -45,9 +46,11 @@ export default {
         mobile: '91.5%'
       },
       dropShadow: {
-        '10px': '0 0 10px #EF5A21',
+        '10px': '0 0 10px #EF5A21'
       }
     }
   },
-  plugins: []
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ]
 };
