@@ -1,6 +1,7 @@
 import { TTableProps } from '../types';
 import { TableItem } from './tableItem';
 import { leaderboardData } from '../constants';
+import { v4 as keygen } from 'uuid';
 
 export const Table: React.FC<TTableProps> = ({ title }) => {
   return (
@@ -13,7 +14,7 @@ export const Table: React.FC<TTableProps> = ({ title }) => {
           <span>პრიზი</span>
         </li>
         {leaderboardData.map(({ place, voucher, prize }) => (
-          <TableItem place={place.toString()} voucher={voucher} prize={prize} />
+          <TableItem key={keygen()} place={place.toString()} voucher={voucher} prize={prize} />
         ))}
       </ul>
     </div>
