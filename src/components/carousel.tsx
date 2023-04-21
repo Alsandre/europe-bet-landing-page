@@ -7,7 +7,7 @@ export const Carousel: React.FC = () => {
     <div className="relative w-mobile m-auto h-[225px] mb-[220px] mt-10">
       <h5 className="text-16 text-start font-mtavruli">მსგავსი აქციები</h5>
       <div className="relative h-48 m-auto overflow-x-scroll scrollbar-hide">
-        <div className="absolute  w-screen top-5 flex gap-4 overflow-x-scroll">
+        <div className="absolute  w-screen top-5 flex gap-4 overflow-x-scroll scrollbar-hide">
           <div className="rounded-[5px] h-[180px] overflow-hidden relative flex-shrink-0">
             <img src={carousel} alt="first action poster" />
             <div className="w-40 h-[113px] bg-gradient-to-t from-[#0D649B] z-50 absolute bottom-0 px-3 pb-5 flex flex-col justify-end gap-2">
