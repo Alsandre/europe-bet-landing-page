@@ -25,4 +25,4 @@ export type TPrizeCardProps = {
 export type TTermsItemProps = {
   onClick: React.MouseEventHandler;
   text: string;
-}
+};
