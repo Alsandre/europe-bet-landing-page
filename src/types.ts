@@ -26,3 +26,9 @@ export type TTermsItemProps = {
   onClick: React.MouseEventHandler;
   text: string;
 };
+export type TEventButtonProps = {
+  isActive: boolean;
+  title: string;
+  period: string;
+  onClick: React.MouseEventHandler;
+};
