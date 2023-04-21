@@ -32,3 +32,7 @@ export type TEventButtonProps = {
   period: string;
   onClick: React.MouseEventHandler;
 };
+export type TPrimaryCardProps = {
+  children: React.ReactNode;
+  className?: string;
+};
