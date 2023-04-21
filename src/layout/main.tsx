@@ -1,7 +1,7 @@
-import { EventCashGames } from "../events";
+import { CashGames } from "../events";
 
 export const Main: React.FC = () => {
   return <div>
-    <EventCashGames />
+    <CashGames />
   </div>;
 };

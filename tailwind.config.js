@@ -43,6 +43,9 @@ export default {
       },
       width: {
         mobile: '91.5%'
+      },
+      dropShadow: {
+        '10px': '0 0 10px #EF5A21',
       }
     }
   },

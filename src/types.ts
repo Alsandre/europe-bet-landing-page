@@ -1,3 +1,8 @@
+export type TLeaderboardEntry = {
+  place: number;
+  voucher: string;
+  prize: string;
+}
 export type TBoardProps = {
   children: React.ReactNode;
   title: string;
@@ -9,3 +14,13 @@ export type TTableItemProps = {
   prize: string;
   className?: string;
 };
+
+export type TTableProps = {
+  title: string;
+  data: TLeaderboardEntry[];
+}
+
+export type TPrizeCardProps = {
+  icon: string;
+  text: string;
+}
