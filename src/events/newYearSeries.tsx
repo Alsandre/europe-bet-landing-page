@@ -1,3 +1,3 @@
-export const EventNYSeries: React.FC = () => {
+export const NewYearSeries: React.FC = () => {
   return <div></div>;
 };

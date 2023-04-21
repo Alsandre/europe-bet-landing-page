@@ -1,3 +1,3 @@
-export const EventFinalStage: React.FC = () => {
+export const FinalStage: React.FC = () => {
   return <div></div>;
 };

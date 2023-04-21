@@ -1,10 +1,7 @@
-import { Card } from "../UI/card"
+import { CashGames } from "../events";
 
 export const Main: React.FC = () => {
   return <div>
-    
-    <div>
-        
-    </div>
+    <CashGames />
   </div>;
 };
