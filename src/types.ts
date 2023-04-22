@@ -36,3 +36,10 @@ export type TPrimaryCardProps = {
   children: React.ReactNode;
   className?: string;
 };
+export type TSpecialEventProps = {
+  title: string;
+  prize: number;
+  buyIn: number | string;
+  date: Date;
+  backgroundImg: string;
+};

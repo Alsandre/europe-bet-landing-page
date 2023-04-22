@@ -7,7 +7,7 @@ import { PrimaryCard } from '../UI';
 
 export const CashGames: React.FC = () => {
   return (
-    <div>
+    <>
       <PrimaryCard>
         <h3 className="rounded-2xl bg-primary-dark-100 py-6 text-center">
           "1₾ რეიქი = 1 ქულას"
@@ -26,7 +26,7 @@ export const CashGames: React.FC = () => {
           text="სპეციალური ტურნირის „Cashgame Sharks” ბილეთი, სადაც გათამაშდება The Festival in Malta-ს საგზური"
         />
         <PrizeCard icon={voucher} text="„ალტას“ ვაუჩერი" />
-        <div className='flex flex-col py-4'>
+        <div className="flex flex-col py-4">
           <span className="inline-block text-center text-13">
             * ლიდერბორდის შედეგები განახლდება
           </span>
@@ -45,6 +45,6 @@ export const CashGames: React.FC = () => {
           ლობიში.
         </span>
       </PrimaryCard>
-    </div>
+    </>
   );
 };

@@ -3,7 +3,7 @@ import { CashGames, NewYearSeries, FinalStage } from '../events';
 import { EventButton } from '../UI';
 
 export const Main: React.FC = () => {
-  const [selectedEvent, setSelectedEvent] = useState('cash-games');
+  const [selectedEvent, setSelectedEvent] = useState('new-year-series');
   return (
     <div>
       <div className="w-mobile m-auto">
