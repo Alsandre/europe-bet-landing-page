@@ -36,6 +36,9 @@ export type TPrimaryCardProps = {
   children: React.ReactNode;
   className?: string;
 };
+export type TCardHorizontalProps = {
+  children: React.ReactNode;
+};
 export type TSpecialEventProps = {
   title: string;
   prize: number;
