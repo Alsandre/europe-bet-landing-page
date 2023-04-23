@@ -13,7 +13,7 @@ import { DropDownNode } from '../components/dropDownNode';
 export const NewYearSeries: React.FC = () => {
   return (
     <>
-      <PrimaryCard className="mb-2">
+      <PrimaryCard className="mb-2  w-mobile mx-auto">
         <h3 className="rounded-t-2xl bg-primary-dark-100 py-6 text-center">
           ტურნირები და სატელიტები
         </h3>
@@ -28,7 +28,7 @@ export const NewYearSeries: React.FC = () => {
           პოკერის ლობი
         </button>
       </PrimaryCard>
-      <PrimaryCard>
+      <PrimaryCard className='w-mobile mx-auto'>
         <h3 className="rounded-2xl bg-primary-dark-100 py-6 text-center font-bold">
           მოხვდი TOP22 ლიდერბორდში ტურნირებზე დაგროვებული ქულებით
         </h3>
@@ -85,7 +85,7 @@ export const NewYearSeries: React.FC = () => {
         </p>
       </div>
 
-      <PrimaryCard className="mt-5 pt-6 pb-4 flex flex-col text-center">
+      <PrimaryCard className="mt-5 pt-6 pb-4 flex flex-col text-center w-mobile mx-auto">
         <p className="text-16 font-bold pb-2">
           დამატებით შედგება, ქეშგეიმის, ტურნირების და სპინ პოკერის 12 Side
           ლიდერბორდი

@@ -6,7 +6,7 @@ export const PrimaryCard: React.FC<TPrimaryCardProps> = ({
 }) => {
   return (
     <div
-      className={`${className} relative rounded-2xl bg-primary-dark-200 w-mobile mx-auto overflow-hidden text-white`}
+      className={`${className} relative rounded-2xl bg-primary-dark-200 overflow-hidden text-white`}
     >
       <span className="inline-block w-[124px] border-b-4 rounded-b-[4px] border-orange-21 drop-shadow-10px absolute left-1/2 top-0 -translate-x-1/2" />
       {children}
