@@ -14,8 +14,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "node_modules/@formatjs/intl-pluralrules/polyfill-locales.js",
+    "node_modules/@formatjs/intl-pluralrules/polyfill.js"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

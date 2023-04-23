@@ -15,7 +15,7 @@ export type TTableItemProps = {
   className?: string;
 };
 export type TTableProps = {
-  title: string;
+  title: string | React.ReactNode;
   data: TLeaderboardEntry[];
 };
 export type TPrizeCardProps = {
@@ -31,4 +31,18 @@ export type TEventButtonProps = {
   title: string;
   period: string;
   onClick: React.MouseEventHandler;
+};
+export type TPrimaryCardProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+export type TCardHorizontalProps = {
+  children: React.ReactNode;
+};
+export type TSpecialEventProps = {
+  title: string;
+  prize: number;
+  buyIn: number | string;
+  date: Date;
+  backgroundImg: string;
 };

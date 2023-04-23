@@ -46,11 +46,10 @@ export default {
         mobile: '91.5%'
       },
       dropShadow: {
-        '10px': '0 0 10px #EF5A21'
+        '10px': ['0 0 10px #EF5A21', '0 0 10px #EF5A21'],
+        '12px': ['0 0 12px #EF5A22', '0 0 12px #EF5A22']
       }
     }
   },
-  plugins: [
-    require('tailwind-scrollbar-hide')
-  ]
+  plugins: [require('tailwind-scrollbar-hide')]
 };

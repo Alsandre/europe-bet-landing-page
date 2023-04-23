@@ -1,3 +1,3 @@
 export { EventButton } from './button';
-export { Card } from './card';
+export { PrimaryCard } from './card';
 export { DropDownIcon } from './dropDown';

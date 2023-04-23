@@ -3,21 +3,21 @@ import { CashGames, NewYearSeries, FinalStage } from '../events';
 import { EventButton } from '../UI';
 
 export const Main: React.FC = () => {
-  const [selectedEvent, setSelectedEvent] = useState('cash-games');
+  const [selectedEvent, setSelectedEvent] = useState('final-stage');
   return (
     <div>
       <div className="w-mobile m-auto">
-        <div className="mb-4">
-          <span className="bg-primary-dark-200 rounded-2xl px-[10px] py-1 text-12 mr-2">
+        <div className="mb-4 mt-4">
+          <span className="bg-primary-dark-200 rounded-2xl px-[10px] py-1 text-12 mr-2 opacity-90">
             სლოტები
           </span>
-          <span className="text-14">10 სექტემბერი - 7 ნოემბერი</span>
+          <span className="text-14 opacity-90">10 სექტემბერი - 7 ნოემბერი</span>
         </div>
         <div className="flex flex-col gap-[14px] mb-[26px]">
           <span className="text-14 font-semibold font-mtavruli">
             მოიპოვე 10 საგზურიდან ერთ-ერთი
           </span>
-          <span className="text-14">მოხვდი პოკერის ფესტივალზე მალტაში</span>
+          <span className="text-14 opacity-90">მოხვდი პოკერის ფესტივალზე მალტაში</span>
         </div>
       </div>
       <div className="w-mobile m-auto mb-8 flex h-[77px]">
