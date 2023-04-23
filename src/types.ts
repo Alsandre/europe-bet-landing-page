@@ -15,7 +15,7 @@ export type TTableItemProps = {
   className?: string;
 };
 export type TTableProps = {
-  title: string;
+  title: string | React.ReactNode;
   data: TLeaderboardEntry[];
 };
 export type TPrizeCardProps = {
