@@ -4,3 +4,7 @@ export { RulesAndTerms } from './terms';
 export { PrizeCard } from './prizeCard';
 export { Table } from './table';
 export { DailyShedule } from './dailyShedule';
+export * from './icons';
+export { FinalStageHeader } from './finalStageHeader';
+export { TravelCard } from './travelCard';
+export { MysticKeyEvent } from './mysticKey';

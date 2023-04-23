@@ -36,8 +36,20 @@ export type TPrimaryCardProps = {
   children: React.ReactNode;
   className?: string;
 };
+export type TTravelCardProps = {
+  title: React.ReactNode;
+  text: string;
+  additionalText?: string;
+  note?: string;
+  variant: string;
+};
+export type TTravelPackProps = {
+  icon: React.ReactNode;
+  text: string;
+};
 export type TCardHorizontalProps = {
   children: React.ReactNode;
+  className?: string;
 };
 export type TSpecialEventProps = {
   title: string;
