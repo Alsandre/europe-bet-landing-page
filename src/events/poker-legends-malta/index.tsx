@@ -9,9 +9,13 @@ const PokerLegendsMalta: React.FC = () => {
   const isDesktop = useMediaQuery({ minWidth: '1280px' });
   return (
     <>
-      {isDesktop && createPortal(<Overlay />, document.getElementById('react-portal') as HTMLElement)}
+      {isDesktop &&
+        createPortal(
+          <Overlay />,
+          document.getElementById('react-portal') as HTMLElement
+        )}
       <Modal isDesktop={isDesktop}>
-        <Header isDesktop={isDesktop}/>
+        <Header isDesktop={isDesktop} />
         <Main />
         <Footer />
       </Modal>

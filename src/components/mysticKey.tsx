@@ -1,4 +1,5 @@
 import eventHead from '../assets/final-mystic-key.jpg';
+import { mysticKeyEventData } from '../constants';
 
 type TMysticCardProps = {
   place: number;
@@ -23,27 +24,11 @@ export const MysticKeyEvent: React.FC = () => {
           <img src={eventHead} alt="" className="object-cover" />
         </div>
       </span>
-      <div className='m-auto mt-5'>
-        <MysticCard
-          place={1}
-          text="სპეციალური ტურნირი Cashgame Sharks II ადგილი"
-        />
-        <MysticCard
-          place={1}
-          text="სპეციალური ტურნირი Cashgame Sharks II ადგილი"
-        />
-        <MysticCard
-          place={1}
-          text="სპეციალური ტურნირი Cashgame Sharks II ადგილი"
-        />
-        <MysticCard
-          place={1}
-          text="სპეციალური ტურნირი Cashgame Sharks II ადგილი"
-        />
-        <MysticCard
-          place={1}
-          text="სპეციალური ტურნირი Cashgame Sharks II ადგილი"
-        />
+      <div className='m-auto mt-5 h-[366px] overflow-y-scroll'>
+        {mysticKeyEventData.map(({place, condition}) => <MysticCard
+          place={place}
+          text={condition}
+        />)}
       </div>
     </div>
   );

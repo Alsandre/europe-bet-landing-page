@@ -15,7 +15,7 @@ export const Modal: React.FC<TModalProps> = ({ children, isDesktop }) => {
           : ''
       }
     >
-        {isDesktop && <button className="w-8 h-8 rounded-full bg-primary-dark-200 flex justify-center items-center absolute top-4 right-4 z-50" onClick={() => navigate(-1)}>X</button>}
+        
       {children}
     </div>
   );

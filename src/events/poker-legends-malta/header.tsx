@@ -1,21 +1,32 @@
 import headerMBG from '../../assets/header-mobile.png';
 import headerDBG from '../../assets/header-D.png';
+import { useNavigate } from 'react-router-dom';
 
 type TProps = {
   isDesktop?: boolean;
 };
 
 export const Header: React.FC<TProps> = ({ isDesktop }) => {
+  const navigate = useNavigate();
   return (
-    <div className="relative">
+    <>
       <div className="w-full flex justify-center">
-        <img src={isDesktop ? headerDBG : headerMBG} alt="poker malta legends" />
+        <img
+          src={isDesktop ? headerDBG : headerMBG}
+          alt="poker malta legends"
+        />
       </div>
-      <div className="w-mobile m-auto text-center ">
+      <div
+        className={
+          isDesktop
+            ? 'w-full fixed top-4 px-4 flex justify-between z-50'
+            : 'mt-4 w-mobile m-auto text-center '
+        }
+      >
         <div
           className={`${
             isDesktop
-              ? 'absolute top-4 left-4 pl-1 pr-3 py-2 rounded-[35px] bg-primary-dark-200'
+              ? 'pl-1 pr-3 py-2 rounded-[35px] bg-primary-dark-200'
               : 'mt-4'
           } mb-4`}
         >
@@ -34,6 +45,17 @@ export const Header: React.FC<TProps> = ({ isDesktop }) => {
             10 სექტემბერი - 7 ნოემბერი
           </span>
         </div>
+        {isDesktop && (
+          <button
+            className="w-8 h-8 rounded-full bg-primary-dark-200 flex justify-center items-center"
+            onClick={() => navigate(-1)}
+          >
+            X
+          </button>
+        )}
+      </div>
+
+      <div className="w-mobile m-auto text-center ">
         <div className="flex flex-col gap-[14px] mb-[26px]">
           <span className="text-14 font-semibold font-mtavruli">
             მოიპოვე 10 საგზურიდან ერთ-ერთი
@@ -43,6 +65,6 @@ export const Header: React.FC<TProps> = ({ isDesktop }) => {
           </span>
         </div>
       </div>
-    </div>
+    </>
   );
 };
