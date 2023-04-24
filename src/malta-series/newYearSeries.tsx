@@ -1,16 +1,20 @@
-import { DropDownIcon, PrimaryCard } from '../UI';
+import { PrimaryCard } from '../UI';
 import { Table, PrizeCard, DailyShedule, LeaderBoard } from '../components';
 import { leaderboardData } from '../constants';
 
 import travel from '../assets/travel-icon-sm.png';
 import ticket from '../assets/ticket-icon-sm.png';
 import voucher from '../assets/voucher-icon-sm.png';
+
 import { SpecialEvent } from '../components/specialEvent';
 import specialEvent from '../assets/special-event.png';
 import specialEvent1 from '../assets/special-event1.png';
+import specialEventLong from '../assets/special-event-long.png';
 import { DropDownNode } from '../components/dropDownNode';
+import { useMediaQuery } from 'react-responsive';
 
 export const NewYearSeries: React.FC = () => {
+  const isDesktop = useMediaQuery({ minWidth: '1280px' });
   return (
     <>
       <PrimaryCard className="mb-2  w-mobile mx-auto">
@@ -58,27 +62,33 @@ export const NewYearSeries: React.FC = () => {
         <h5 className="font-bold text-12 mt-6 mb-5 w-mobile m-auto">
           ყოველდღიური ტურნირები და სატელიტები
         </h5>
-        <SpecialEvent
-          title="Omaha Highrollers"
-          prize={40000}
-          buyIn="XXX"
-          date={new Date(2023, 11, 27)}
-          backgroundImg={specialEvent1}
-        />
-        <SpecialEvent
-          title="Omaha Highrollers"
-          prize={40000}
-          buyIn="XXX"
-          date={new Date(2023, 11, 27)}
-          backgroundImg={specialEvent1}
-        />
-        <SpecialEvent
-          title="Omaha Highrollers"
-          prize={40000}
-          buyIn="XXX"
-          date={new Date(2023, 11, 27)}
-          backgroundImg={specialEvent}
-        />
+        <div className="w-mobile m-auto xl:flex xl:flex-col">
+          <div className="xl:flex xl:gap-4">
+            <SpecialEvent
+              className="flex-1"
+              title="Omaha Highrollers"
+              prize={40000}
+              buyIn="XXX"
+              date={new Date(2023, 11, 27)}
+              backgroundImg={specialEvent1}
+            />
+            <SpecialEvent
+              className="flex-1"
+              title="Omaha Highrollers"
+              prize={40000}
+              buyIn="XXX"
+              date={new Date(2023, 11, 27)}
+              backgroundImg={specialEvent1}
+            />
+          </div>
+          <SpecialEvent
+            title="Omaha Highrollers"
+            prize={40000}
+            buyIn="XXX"
+            date={new Date(2023, 11, 27)}
+            backgroundImg={isDesktop ? specialEventLong : specialEvent}
+          />
+        </div>
         <p className="font-medium text-14 w-mobile m-auto">
           * სამივე ტურნირის გამარჯვებულები მიიღებენ ბეჭდებს და ფინალურ ეტაპზე,
           The Lord of the Rings ტურნირზე, იბრძოლებენ The Festival in Malta-ს

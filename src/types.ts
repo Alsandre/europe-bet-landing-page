@@ -60,4 +60,5 @@ export type TSpecialEventProps = {
   buyIn: number | string;
   date: Date;
   backgroundImg: string;
+  className?: string;
 };

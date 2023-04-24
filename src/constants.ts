@@ -14,8 +14,8 @@ export const leaderboardData = [
 ];
 
 for (let i = 11; i < 100; i++) {
-  let voucher = i < 20 ? 4500 / i : '-';
-  let prize = i < 50 ? 'სპეც ტურნირის ბილეთი' : '-';
+  const voucher = i < 20 ? 4500 / i : '-';
+  const prize = i < 50 ? 'სპეც ტურნირის ბილეთი' : '-';
   leaderboardData.push({
     place: i,
     voucher: typeof voucher === 'number' ? voucher.toFixed(2) : voucher,

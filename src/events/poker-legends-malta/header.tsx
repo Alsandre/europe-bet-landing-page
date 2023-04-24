@@ -1,4 +1,5 @@
 import headerMBG from '../../assets/header-mobile.png';
+import headerDBG from '../../assets/header-D.png';
 
 type TProps = {
   isDesktop?: boolean;
@@ -8,7 +9,7 @@ export const Header: React.FC<TProps> = ({ isDesktop }) => {
   return (
     <div className="relative">
       <div className="w-full flex justify-center">
-        <img src={headerMBG} alt="poker malta legends" />
+        <img src={isDesktop ? headerDBG : headerMBG} alt="poker malta legends" />
       </div>
       <div className="w-mobile m-auto text-center ">
         <div
