@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-export const PokerLoby: React.FC = () => {
+export const PokerLobby: React.FC = () => {
   const navigate = useNavigate();
   return (
     <>

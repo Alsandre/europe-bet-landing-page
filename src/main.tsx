@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Layout } from './layout/layout';
-import { ErrorPage, Homepage, SignIn, SignUp } from './routes';
-import { Events } from './routes/events';
+import Layout from './layout';
+import { ErrorPage, Homepage, SignIn, SignUp, Events } from './routes';
 import PokerLegendsMalta from './events/poker-legends-malta';
 
 const router = createBrowserRouter([
