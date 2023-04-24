@@ -8,10 +8,7 @@ import { PrimaryCard } from '../UI';
 export const CashGames: React.FC = () => {
   return (
     <>
-      <PrimaryCard className="w-mobile mx-auto">
-        <h5 className="rounded-2xl bg-primary-dark-100 py-6 text-center">
-          "1₾ რეიქი = 1 ქულას"
-        </h5>
+      <LeaderBoard title='"1₾ რეიქი = 1 ქულას"' cardClass="w-mobile mx-auto">
         <Table title="TOP20 ლიდერბორდი ჰოლდემში" data={leaderboardData} />
         <PrizeCard icon={travel} text="The Festival in Malta-ს საგზური" />
         <PrizeCard
@@ -34,7 +31,7 @@ export const CashGames: React.FC = () => {
             პოკერის ლობიში
           </a>
         </div>
-      </PrimaryCard>
+      </LeaderBoard>
       <PrimaryCard className="mt-6 pt-6 pb-4 flex flex-col text-center w-mobile mx-auto">
         <p className="text-16 font-bold pb-2">
           დამატებით შედგება, ქეშგეიმის, ტურნირების და სპინ პოკერის 12 Side

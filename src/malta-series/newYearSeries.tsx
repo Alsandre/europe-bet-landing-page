@@ -1,5 +1,5 @@
 import { DropDownIcon, PrimaryCard } from '../UI';
-import { Table, PrizeCard, DailyShedule } from '../components';
+import { Table, PrizeCard, DailyShedule, LeaderBoard } from '../components';
 import { leaderboardData } from '../constants';
 
 import travel from '../assets/travel-icon-sm.png';
@@ -28,10 +28,11 @@ export const NewYearSeries: React.FC = () => {
           პოკერის ლობი
         </button>
       </PrimaryCard>
-      <PrimaryCard className='w-mobile mx-auto'>
-        <h3 className="rounded-2xl bg-primary-dark-100 py-6 text-center font-bold">
-          მოხვდი TOP22 ლიდერბორდში ტურნირებზე დაგროვებული ქულებით
-        </h3>
+      <LeaderBoard
+        cardClass="w-mobile mx-auto"
+        headerClass="font-bold"
+        title="მოხვდი TOP22 ლიდერბორდში ტურნირებზე დაგროვებული ქულებით"
+      >
         <Table title={<DropDownNode />} data={leaderboardData} />
         <PrizeCard icon={travel} text="The Festival in Malta-ს საგზური" />
         <PrizeCard
@@ -51,7 +52,7 @@ export const NewYearSeries: React.FC = () => {
           * სატურნირო ლიდერბორდის ქულების დათვლაში არ მონაწილეობს ფრიროლები და
           სატელიტები
         </p>
-      </PrimaryCard>
+      </LeaderBoard>
 
       <div>
         <h5 className="font-bold text-12 mt-6 mb-5 w-mobile m-auto">
