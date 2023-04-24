@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { CashGames, NewYearSeries, FinalStage } from '../malta-series';
-import { EventButton } from '../UI';
+import { CashGames, NewYearSeries, FinalStage } from '../../malta-series';
+import { EventButton } from '../../UI';
 
 export const Main: React.FC = () => {
   const [selectedEvent, setSelectedEvent] = useState('final-stage');

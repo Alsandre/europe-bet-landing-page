@@ -1,4 +1,4 @@
-import headerMBG from '../assets/header-mobile.png';
+import headerMBG from '../../assets/header-mobile.png';
 
 export const Header: React.FC = () => {
   return (
