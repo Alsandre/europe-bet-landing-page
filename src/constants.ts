@@ -24,18 +24,18 @@ for (let i = 11; i < 100; i++) {
   });
 }
 
-export const mysticKeyEventData = [ 
-  {place: 1, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი'},
-  {place: 2, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი'},
-  {place: 3, condition: 'სპეციალური ტურნირი Tournament Sharks II ადგილი'},
-  {place: 4, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი'},
-  {place: 5, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი'},
-  {place: 6, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი'},
-  {place: 7, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი'},
-  {place: 8, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი'},
-  {place: 9, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი'},
-  {place: 10, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი'}
-]
+export const mysticKeyEventData = [
+  { place: 1, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი' },
+  { place: 2, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი' },
+  { place: 3, condition: 'სპეციალური ტურნირი Tournament Sharks II ადგილი' },
+  { place: 4, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი' },
+  { place: 5, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი' },
+  { place: 6, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი' },
+  { place: 7, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი' },
+  { place: 8, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი' },
+  { place: 9, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი' },
+  { place: 10, condition: 'სპეციალური ტურნირი Cashgame Sharks II ადგილი' }
+];
 
 export const monthListGE = [
   'იანვარი',
