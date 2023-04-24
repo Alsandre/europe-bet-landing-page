@@ -6,13 +6,16 @@ export type TLeaderboardEntry = {
 export type TBoardProps = {
   children: React.ReactNode;
   title: string;
-  className?: string;
+  boardClass?: string;
+  headerClass?: string;
+  cardClass?: string;
 };
 export type TTableItemProps = {
   place: string;
   voucher: string;
   prize: string;
   className?: string;
+  icon: string | null;
 };
 export type TTableProps = {
   title: string | React.ReactNode;
@@ -57,4 +60,5 @@ export type TSpecialEventProps = {
   buyIn: number | string;
   date: Date;
   backgroundImg: string;
+  className?: string;
 };

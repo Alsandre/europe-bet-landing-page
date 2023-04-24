@@ -6,11 +6,14 @@ export const SpecialEvent: React.FC<TSpecialEventProps> = ({
   prize,
   buyIn,
   date,
-  backgroundImg
+  backgroundImg,
+  className
 }) => {
   return (
     <div
-      className={`w-mobile m-auto rounded-xl pl-5 pr-16 h-[85px] flex justify-between items-center mb-[14px]`}
+      className={`rounded-xl pl-5 pr-16 h-[85px] flex justify-center gap-16 items-center mb-[14px] ${
+        className ? className : ''
+      }`}
       style={{
         backgroundImage: `url(${backgroundImg})`,
         backgroundSize: 'cover'

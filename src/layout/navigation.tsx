@@ -1,8 +1,10 @@
+import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
 
 export const MainNavigation: React.FC = () => {
+  const isDesktop = useMediaQuery({ minWidth: '1280px' });
   return (
-    <div className="pt-[104px]">
+    <div className={isDesktop ? 'pt-3' : 'pt-[104px]'}>
       <div className="w-mobile m-auto flex justify-between ">
         <Link to={'/'}>
           <span className="inline-block w-6 h-6 rounded-full bg-orange-22"></span>
