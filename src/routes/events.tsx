@@ -13,7 +13,7 @@ export const Events: React.FC = () => {
         <h3>Events:</h3>
         <ul>
           <li className="italic text-orange-21 underline text-20">
-            <Link to={'poker-legends-malta'}>Poker Legends Malta</Link>
+            <Link to={'/'}>Poker Legends Malta</Link>
           </li>
         </ul>
       </div>

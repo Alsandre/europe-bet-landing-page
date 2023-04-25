@@ -12,11 +12,11 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      { index: true, element: <Homepage /> },
+      { path: '/homepage', element: <Homepage /> },
       { path: '/sign-up', element: <SignUp /> },
       { path: '/sign-in', element: <SignIn /> },
       { path: '/events', element: <Events /> },
-      { path: '/events/:eventId', element: <PokerLegendsMalta /> }
+      { index: true, path: '/', element: <PokerLegendsMalta /> }
     ]
   }
 ]);
