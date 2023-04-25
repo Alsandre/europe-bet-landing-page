@@ -26,7 +26,7 @@ export type TPrizeCardProps = {
   text: string;
 };
 export type TTermsItemProps = {
-  onClick: React.MouseEventHandler;
+  rotate: boolean;
   text: string;
 };
 export type TEventButtonProps = {
