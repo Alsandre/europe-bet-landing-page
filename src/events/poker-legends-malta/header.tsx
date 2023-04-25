@@ -48,7 +48,7 @@ export const Header: React.FC<TProps> = ({ isDesktop }) => {
         {isDesktop && (
           <button
             className="w-8 h-8 rounded-full bg-primary-dark-200 flex justify-center items-center"
-            onClick={() => navigate(-1)}
+            onClick={() => navigate('/homepage')}
           >
             X
           </button>
