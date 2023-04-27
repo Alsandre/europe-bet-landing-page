@@ -2,7 +2,7 @@ import promoLeft from '../assets/promo-left-img-m.png';
 import promoRight from '../assets/promo-right-img-m.png';
 import cardsLeft from '../assets/promo-left-img.png'
 import cardsRight from '../assets/promo-right-img.png'
-import ClockIcon from './ClockIcon';
+import { ClockIcon } from './icons';
 
 export const DailyShedule: React.FC = () => {
   return (
